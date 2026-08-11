@@ -72,7 +72,7 @@ app.get('/callback', async (req, res) => {
     sfSession.refreshToken = tokenResponse.data.refresh_token;
 
     console.log('Login successful! Instance URL:', sfSession.instanceUrl);
-    res.redirect('http://localhost:5173/?login=success');
+    res.redirect('https://salesforce-crud-frontend.onrender.com/?login=success');
   } catch (error) {
     console.error('Token exchange failed:', error.response?.data || error.message);
     res.status(500).send('OAuth login failed. Check server console.');
