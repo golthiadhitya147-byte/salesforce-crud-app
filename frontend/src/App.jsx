@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import axios from 'axios';
 import './App.css';
 
-const API_BASE = 'http://localhost:3000';
+const API_BASE = 'https://salesforce-crud-app.onrender.com';
 const OBJECTS = ['Account', 'Opportunity', 'Lead', 'Contact', 'Case'];
 
 function App() {
